@@ -1,6 +1,6 @@
 {
   "name": "mongo-object-reader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple library to get info from a mongo Object Id.",
   "main": "index.js",
   "repository": {
@@ -10,10 +10,12 @@
   "keywords": [
     "mongodb",
     "objectID",
-    "mongo-object-reader"
+    "mongo-object-reader",
+    "BSON"
   ],
   "scripts": {
-    "test": "node index.test.js"
+    "test": "node index.test.js",
+    "prepublish": "npm test"
   },
   "author": "shiva mangina",
   "license": "MIT"
