@@ -16,7 +16,7 @@ var const { createObjectID, readObjectID,isValidObjectID }  = require('mongo-obj
 const ObjectID =  createObjectID() //a valid 24 character `ObjectID` hex string.
 
 //returns boolean
-// imput - a valid 24 character `ObjectID` hex string.
+// input - a valid 24 character `ObjectID` hex string.
 const isValid = isValidObjectID(ObjectID) 
 
 //returns an object with data
