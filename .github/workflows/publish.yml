@@ -1,7 +1,7 @@
 name: publish
 
 on:
-  pull:
+  push:
     branches: [master]
 
 jobs:
@@ -14,4 +14,5 @@ jobs:
           node-version: 12
       - run: npm publish --access publish
         working-directory: mongo-object-reader
-        env: NODE_AUTH_TOKEN:${{secrets.NPM_AUTH_TOKEN}}
+        env: 
+            NODE_AUTH_TOKEN:${{secrets.NPM_AUTH_TOKEN}}
