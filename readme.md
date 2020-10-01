@@ -11,6 +11,9 @@ modules.
 
 ## Usage
 ```javascript
+ES6
+import { createObjectID, readObjectID,isValidObjectID }  from 'mongo-object-reader';
+
 const { createObjectID, readObjectID,isValidObjectID }  = require('mongo-object-reader');
 //Creates a new immutable `ObjectID` instance based on the current system time.
 const ObjectID =  createObjectID() //a valid 24 character `ObjectID` hex string.
